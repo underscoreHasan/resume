@@ -1,0 +1,230 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Hasan Noor} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 672-971-8508 ~ \href{mailto:hnoor02ubc@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{hnoor02ubc@gmail.com}} ~ 
+    \href{https://linkedin.com/in/hasan-noor/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/hasan-noor}}  ~
+    \href{https://github.com/underscoreHasan}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/underscoreHasan}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of British Columbia}{Sep. 2022 -- May 2026}
+      {BSc Computer Science}{Vancouver, BC}
+  \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, C++, C, JavaScript, TypeScript, HTML/CSS, Python, SQL} \\
+     \textbf{Developer Tools}{: Git, Linux, Postman, , Grafana, SAP HANA, JUnit, Mocha, Chai} \\
+     \textbf{Technologies/Frameworks}{: ReactJS, Node.js, Express.js Google Cloud Platform (GCP), Chakra UI, Arduino
+} \\
+     \textbf{Relevant Coursework}{: Advanced Data Structures and Algorithms, OOP, Relational Databases, Computer Architecture} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {SAP}{January 2024 -- August 2024}
+      {Product Support Engineer}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Provided \textbf{technical support} to customers for their deployed SAP HANA systems, achieving a \textbf{95\% satisfaction} rate.}
+        \resumeItem{\textbf{Diagnosed deployment failures} through analysis of program code and system traces to \textbf{resolve 30+ incidents}.}
+        \resumeItem{Provided \textbf{on-call support} to recover customer systems facing production down scenarios, improving team’s average response time to \textbf{under 10 minutes}.}
+        \resumeItem{Developed strong \textbf{SQL, Linux, networking, computer architecture} and \textbf{troubleshooting skills} through database administration tasks, performance tuning, and problem analysis.}
+        \resumeItem{Lead a committee of 15 interns to organize office events, increasing average turnout by 40\% through effective event planning and marketing.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Faculty of Computer Science, UBC}{September 2023 -- Current}
+      {Proofs and Discrete Math Teaching Assistant}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Provide one-on-one guidance to explain \textbf{complex concepts} from discrete math and logic through analogies and guided inquiries during biweekly \textbf{lectures of 250 students}.}
+        \resumeItem{Efficiently manage weekly \textbf{labs of 30 students}, multitasking in a \textbf{dynamic setting} to successfully conduct mathematical, teamwork and circuit-building activities.}
+        \resumeItem{Achieved \textbf{80\%} highly positive impressions from surveyed students over \textbf{170 teaching hours}.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Social Media Account Finder} $|$ \emph{ ReactJS, Google Cloud Platform, Python, Docker}}{October 2023}
+          \resumeItemListStart
+            \resumeItem{Built \textbf{full-stack web app} based on open source script to search for social media handles across \textbf{200+} networks.}
+            \resumeItem{Implemented \textbf{multithreading, Server Sent Events} and \textbf{lazy-loading} to reduce server response time by \textbf{85\%} compared to using a POST response.}
+            \resumeItem{Reduced cold start delays by \textbf{70\%} by \textbf{deploying Docker container} with pre-warmed instance to Google Cloud Run.}
+            \resumeItem{Established \textbf{CI/CD} pipeline via Google Cloud Build to reduce manual deployment time by \textbf{90\%}.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Course Scheduling App} $|$ \emph{ReactJS, HTML/CSS, JavaScript}}{November 2020}
+          \resumeItemListStart
+            \resumeItem{Built \textbf{full-stack web app} to simplify university course planning by predicting walk times between classes.}
+            \resumeItem{Developed \textbf{custom algorithm to build parse trees} from .ics files, resulting in \textbf{-40\%} execution time versus library.}
+            \resumeItem{Wrapped Google Maps API into a \textbf{RESTful service} within a Node.js backend.}
+            \resumeItem{Implemented \textbf{reusable components}, improved GUI and rebuilt backend as a summer project to hone full-stack skills.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Electric Vehicle Testbench} $|$ \emph{C, C++, Arduino, Grafana}}{October 2020}
+          \resumeItemListStart
+            \resumeItem{Developed firmware in C/C++ for Arduino modules in an electric car testbench.}
+            \resumeItem{Enhanced \textbf{vehicle monitoring dashboard} by integrating additional sensors, resulting in \textbf{4 new metrics} and a \textbf{25\% increase} in data resolution.}
+            \resumeItem{\textbf{Improved driver approval} of new data-focused HUD design by \textbf{50\%} through integrating Grafana graphing API.}
+            \resumeItem{\textbf{Designed an }interactive UI\textbf{ rendered on a TFT screen to }improve \textbf{usability} of testing equipment by non-technical teams.}            
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+            \resumeItemListStart
+                \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+                \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+                \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+\end{document}
