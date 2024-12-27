@@ -14,4 +14,4 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           files: |
-            README.tex
+            resume.tex
