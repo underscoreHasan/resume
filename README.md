@@ -1,5 +1,7 @@
 # Resume [here](https://underscorehasan.github.io/resume/resume.pdf)! 📜
 
+I have successfully managed to overengineer my resume
+
 Deployment workflow based on [jonhue/pubtex](https://github.com/jonhue/pubtex)
 
 This repo publicly hosts a LaTeX file for my Resume on GitHub Pages.
