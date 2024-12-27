@@ -20,6 +20,7 @@
 \usepackage{tabularx}
 \usepackage{fontawesome5}
 \usepackage{multicol}
+\usepackage{xcolor}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
@@ -42,6 +43,7 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+\definecolor{customblue}{HTML}{2e75b5}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.6in}
@@ -66,6 +68,9 @@
 
 %-------------------------
 % Custom commands
+\newcommand{\bluey}[1]{{\color{customblue}#1}}
+
+
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
@@ -135,7 +140,7 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Java, C++, C, JavaScript, TypeScript, HTML/CSS, Python, SQL} \\
-     \textbf{Developer Tools}{: Git, Linux, Postman, , Grafana, SAP HANA, JUnit, Mocha, Chai} \\
+     \textbf{Developer Tools}{: Git, Linux, Docker, Postman, , Grafana, SAP HANA, JUnit, Mocha, Chai} \\
      \textbf{Technologies/Frameworks}{: ReactJS, Node.js, Express.js Google Cloud Platform (GCP), Chakra UI, Arduino
 } \\
      \textbf{Relevant Coursework}{: Advanced Data Structures and Algorithms, OOP, Relational Databases, Computer Architecture} \\
@@ -148,8 +153,8 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {SAP}{January 2024 -- August 2024}
-      {Product Support Engineer}{Vancouver, BC}
+      {\bluey{SAP}}{January 2024 -- August 2024}
+      {\bluey{Product Support Engineer}}{Vancouver, BC}
       \resumeItemListStart
         \resumeItem{Provided \textbf{technical support} to customers for their deployed SAP HANA systems, achieving a \textbf{95\% satisfaction} rate.}
         \resumeItem{\textbf{Diagnosed deployment failures} through analysis of program code and system traces to \textbf{resolve 30+ incidents}.}
@@ -159,8 +164,8 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Faculty of Computer Science, UBC}{September 2023 -- Current}
-      {Proofs and Discrete Math Teaching Assistant}{Vancouver, BC}
+      {\bluey{Faculty of Computer Science, UBC}}{September 2023 -- Current}
+      {\bluey{Proofs and Discrete Math Teaching Assistant}}{Vancouver, BC}
       \resumeItemListStart
         \resumeItem{Provide one-on-one guidance to explain \textbf{complex concepts} from discrete math and logic through analogies and guided inquiries during biweekly \textbf{lectures of 250 students}.}
         \resumeItem{Efficiently manage weekly \textbf{labs of 30 students}, multitasking in a \textbf{dynamic setting} to successfully conduct mathematical, teamwork and circuit-building activities.}
@@ -175,7 +180,7 @@
     \vspace{-5pt}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Social Media Account Finder} $|$ \emph{ ReactJS, Google Cloud Platform, Python, Docker}}{October 2023}
+          {\textbf{\bluey{Social Media Account Finder}} $|$ \emph{ \textbf{ReactJS, Google Cloud Platform, Python, Docker}}}{October 2023}
           \resumeItemListStart
             \resumeItem{Built \textbf{full-stack web app} based on open source script to search for social media handles across \textbf{200+} networks.}
             \resumeItem{Implemented \textbf{multithreading, Server Sent Events} and \textbf{lazy-loading} to reduce server response time by \textbf{85\%} compared to using a POST response.}
@@ -184,7 +189,7 @@
           \resumeItemListEnd
           \vspace{-13pt}
       \resumeProjectHeading
-          {\textbf{Course Scheduling App} $|$ \emph{ReactJS, HTML/CSS, JavaScript}}{November 2020}
+          {\textbf{\bluey{Course Scheduling App}} $|$ \emph{\textbf{ReactJS, HTML/CSS, JavaScript}}}{November 2020}
           \resumeItemListStart
             \resumeItem{Built \textbf{full-stack web app} to simplify university course planning by predicting walk times between classes.}
             \resumeItem{Developed \textbf{custom algorithm to build parse trees} from .ics files, resulting in \textbf{-40\%} execution time versus library.}
@@ -193,7 +198,7 @@
           \resumeItemListEnd 
           \vspace{-13pt}
           \resumeProjectHeading
-          {\textbf{Electric Vehicle Testbench} $|$ \emph{C, C++, Arduino, Grafana}}{October 2020}
+          {\textbf{\bluey{Electric Vehicle Testbench}} $|$ \emph{\textbf{C, C++, Arduino, Grafana}}}{October 2020}
           \resumeItemListStart
             \resumeItem{Developed firmware in C/C++ for Arduino modules in an electric car testbench.}
             \resumeItem{Enhanced \textbf{vehicle monitoring dashboard} by integrating additional sensors, resulting in \textbf{4 new metrics} and a \textbf{25\% increase} in data resolution.}
