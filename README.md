@@ -1,4 +1,4 @@
-# Resume [here](https://underscorehasan.github.io/resume/resume.pdf)! 📜
+# Resume displayed [here](https://underscorehasan.github.io/resume/resume.pdf)! 📜
 
 I have successfully managed to overengineer my resume
 
