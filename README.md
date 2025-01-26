@@ -2,7 +2,7 @@
 
 I have successfully managed to overengineer my resume
 
-Deployment workflow based on [jonhue/pubtex](https://github.com/jonhue/pubtex)
+Deployment workflow based on jonhue/pubtex
 
 Since LaTeX code can't be rendered in a GitHub README, this repo instead publicly hosts a compiled LaTeX file as a PDF on GitHub Pages.
 
