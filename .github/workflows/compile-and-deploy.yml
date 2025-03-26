@@ -23,6 +23,8 @@ jobs:
           ls -lh
 
       - name: Deploy to GitHub Pages
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
