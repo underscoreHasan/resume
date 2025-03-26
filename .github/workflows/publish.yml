@@ -4,13 +4,12 @@ on:
   push:
     branches:
       - main
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup LaTeX
+      - uses: actions/checkout@main
+      - name: Install latest TeX Live
         run: |
           sudo apt-get update
           sudo apt-get install -y texlive-full
@@ -18,7 +17,5 @@ jobs:
         uses: jonhue/pubtex-action@main
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          pre_compile: tlmgr update --self && tlmgr update --all
-          root_file: resume.tex
-          compiler: latexmk
-          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode
+          files: |
+            resume.tex
