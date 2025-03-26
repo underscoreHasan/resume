@@ -1,3 +1,4 @@
+
 name: Publish
 
 on:
@@ -9,21 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
-
-      - name: Install latest TeX Live
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y perl wget
-          wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
-          tar -xzf install-tl-unx.tar.gz
-          cd install-tl-*
-          sudo perl install-tl --profile=<<EOF
-          selected_scheme scheme-full
-          EOF
-          echo "/usr/local/texlive/2025/bin/x86_64-linux" >> $GITHUB_PATH
-
       - name: Compile and Deploy
-        uses: jonhue/pubtex-action@main
+        uses: jonhue/pubtex-action@v1.1.0
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           files: |
