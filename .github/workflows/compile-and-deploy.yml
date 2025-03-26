@@ -1,0 +1,34 @@
+name: Compile and Deploy Resume
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+
+      - name: Install TeX Live
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-full
+
+      - name: Compile LaTeX
+        run: |
+          latexmk -pdf -interaction=nonstopmode -halt-on-error resume.tex
+          ls -lh
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git checkout --orphan gh-pages
+          git reset --hard
+          mv resume.pdf index.pdf
+          git add index.pdf
+          git commit -m "Deploy latest resume.pdf"
+          git push --force origin gh-pages
