@@ -8,14 +8,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: ghcr.io/xu-cheng/texlive-full:latest  # Pre-installed TeX Live
     steps:
-      - name: Checkout main branch
+      - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Install TeX Live
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y texlive-full
 
       - name: Compile LaTeX
         run: |
@@ -26,11 +22,17 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
+
           git checkout --orphan gh-pages
           git reset --hard
           mv resume.pdf index.pdf
           git add index.pdf
           git commit -m "Deploy latest resume.pdf"
-          git push --force origin gh-pages
+          git push --force git@github.com:${{ github.repository }}.git gh-pages
