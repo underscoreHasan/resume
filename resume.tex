@@ -128,114 +128,127 @@
 % \end{tabular*}
 
 \begin{center}
-    {\Huge \scshape Hasan Noor} \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ 672-971-8508 ~ \href{mailto:hnoor02ubc@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{hnoor02ubc@gmail.com}} ~ 
-    \href{https://linkedin.com/in/hasan-noor/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/hasan-noor}}  ~
-    \href{https://github.com/underscoreHasan}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/underscoreHasan}}
-    \vspace{-8pt}
+	{\Huge \scshape Hasan Noor} \\ \vspace{1pt}
+	\small \raisebox{-0.1\height}\faPhone\ 672-971-8508 ~ \href{mailto:hnoor02ubc@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{hnoor02ubc@gmail.com}} ~ 
+	\href{https://linkedin.com/in/hasan-noor/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/hasan-noor}}  ~
+	\href{https://github.com/underscoreHasan}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/underscoreHasan}}
+	\vspace{-8pt}
 \end{center}
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of British Columbia}{Sept 2022 -- Apr 2026}
-      {BSc Computer Science, \rm{GPA: 4.0/4.33}}{Vancouver, BC}
-  \resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {University of British Columbia}{Sept 2022 -- Apr 2028}
+        {BSc Computer Science, \rm{GPA: 4.0/4.33}}{Vancouver, BC}
+    \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {\bluey{SAP}}{Jan 2024 -- Aug 2024}
-      {\bluey{Site Reliability Engineer}}{Vancouver, BC}
-      \resumeItemListStart
-        \resumeItem{Provided technical support to \textbf{100+ enterprises} for their deployed SAP systems, achieving a \textbf{95\% satisfaction} rate.}
-        \resumeItem{Built a real-time dashboard to track critical customer issues using \textbf{Electron, React} and \textbf{Flask}, reducing team's first response time to under 10 minutes, down from 20.}
-        \resumeItem{Configured and managed \textbf{Docker} containers for testing SAP application environments, reducing setup time by 60\% compared to manual deployments.}
-        \resumeItem{Resolved \textbf{34 critical issues} through code analysis and system tracing to diagnose deployment failures.}
-        \resumeItem{Diagnosed a memory leak in a customer’s SAP instance by analyzing heap dumps and JVM performance metrics, preventing future crashes and improving uptime.}
-        \resumeItem{Resolved a high-priority authentication failure affecting 1000+ users, identifying the root cause through Linux log analysis, \textbf{OAuth} token inspection, and \textbf{SSL/TLS} certificate mismatches.}
-                
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {\bluey{Faculty of Computer Science, UBC}}{Sept 2023 -- Current}
-      {\bluey{Teaching Assistant (Proofs and Discrete Math)}}{Vancouver, BC}
-      \resumeItemListStart
-        \resumeItem{Provided one-on-one guidance to students for topics in discrete math and computing logic.}
-        \resumeItem{Achieved 95\% highly positive impressions from surveyed students over 240 teaching hours.}
-    \resumeItemListEnd
-    
-  \resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+      
+        \resumeSubheading
+        {\bluey{Asana Inc.}}{Apr 2026 -- Current}
+        {\bluey{Software Engineer Intern}}{Vancouver, BC}
+        \resumeItemListStart
+            \resumeItem{Developing foundational Admin Panel features to enable enterprise AI features and token-based billing.}
+        \resumeItemListEnd
+            
+        \resumeSubheading
+        {\bluey{Rivian Automotive}}{Sept 2025 -- Apr 2026}
+        {\bluey{Software Engineer Intern}}{Vancouver, BC}
+        \resumeItemListStart
+            %ResourceLoader
+            \resumeItem{Designed and implemented a data structure to automatically detect vehicle hardware profiles and serve corresponding assets, \textbf{replacing \textit{O(N)} conditional branching with an \textit{O(1)} lookup}; scaled across 40,000+ configurations.}
+            %ResourceLoader Pt 2
+            \resumeItem{Leveraged above data structure to prune hardware-mismatched software assets on first boot, \textbf{reducing Android system image size by 15\%}.}
+            %Gumby Climate Schedule
+            \resumeItem{Implemented the end-to-end architecture for the R2 Climate Schedule, leveraging lifecycle-aware MVVM for the application layer to \textbf{reduce memory footprint by 40\%} versus monolithic fragments.}
+            %Weather Panel
+            \resumeItem{Implemented an event-driven state machine for the R2 Weather Panel to manage asynchronous OS data streams, mapping \textbf{15 distinct network and hardware error states} to deterministic UI states.}
+            %rivian-properties-lib
+            \resumeItem{Developed a type-safe, auto-generated Kotlin library to centralize hardware configuration queries, deprecating unsafe reflection usage and resolving SE Linux security vulnerabilities across \textbf{50+ legacy access points}.}
+            %Misc Stuff
+            \resumeItem{Developed a code generator to automate the translation of Figma designs into Android Jetpack Compose code, establishing foundational architecture driving the deprecation of legacy XML.}
+            \resumeItem{Championed AI tooling adoption by authoring documentation, hosting sessions and building agent skills, abstracting complex workflows into streamlined agent commands adopted across the company.}
+        \resumeItemListEnd
+        
+        \resumeSubheading
+        {\bluey{SAP}}{Jan 2024 -- Aug 2024}
+        {\bluey{Site Reliability Engineer Intern}}{Vancouver, BC}
+        \resumeItemListStart
+            \resumeItem{Provided technical support to \textbf{100+ enterprises} for their deployed SAP systems, achieving a \textbf{95\% satisfaction} rate.}
+            \resumeItem{Built a real-time dashboard to track critical customer issues using \textbf{Electron, React} and \textbf{Flask}, reducing team's first response time to under 10 minutes, down from 20.}
+            \resumeItem{Configured and managed \textbf{Docker} containers for testing SAP application environments, reducing setup time by 60\% compared to manual deployments.}
+            \resumeItem{Resolved \textbf{34 critical issues} through code analysis and system tracing to diagnose deployment failures.}
+            \resumeItem{Resolved a high-priority authentication failure affecting 1000+ users, identifying the root cause through Linux log analysis, \textbf{OAuth} token inspection, and \textbf{SSL/TLS} certificate mismatches.}                
+        \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
 \vspace{-16pt}
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \vspace{-5pt}
+\vspace{-5pt}
     \resumeSubHeadingListStart
+          
         \resumeProjectHeading
-          {\textbf{\bluey{\href{https://github.com/underscoreHasan/Bluetooth-Chat-App}{Bluetooth Chat App \faLink}}} $|$ \emph{Kotlin, JetPack Compose, Bluetooth}}{Feb 2025 - Current}
-          \resumeItemListStart
+        {\textbf{\bluey{\href{https://tutor-website-5528f.web.app/en}{Tutoring Business Website \faLink}}} $|$ \emph{React, TypeScript, Vite, Firebase, Stripe}}{Feb 2025 - Current}
+        \resumeItemListStart
+            \resumeItem{Designed and shipped a tutoring website serving \textbf{80+ active users.}}
+            \resumeItem{Achieved \textbf{near-zero operating costs} by implementing Firestore and client-side processing for a lean infrastructure.}
+            \resumeItem{Integrated \textbf{Stripe API} with \textbf{Firebase Functions} to process \textbf{\$5,500+} in monthly transactions.}
+        \resumeItemListEnd
+        \vspace{-13pt}
+        
+        \resumeProjectHeading
+        {\textbf{\bluey{\href{https://github.com/underscoreHasan/Bluetooth-Chat-App}{Bluetooth Chat App \faLink}}} $|$ \emph{Kotlin, JetPack Compose, Bluetooth}}{Feb 2025 - Jun 2025}
+        \resumeItemListStart
             \resumeItem{Built chat application using \textbf{Kotlin} and Android Bluetooth API, enabling P2P communication over Bluetooth Classic.}
             \resumeItem{Developed BluetoothSocket and UUID-based \textbf{authentication protocol} enable peer verification and secure pairing.}
             \resumeItem{Leveraged Dispatcher.IO \textbf{Kotlin coroutine} to offload intensive I/O operations from main thread, reducing UI blocking and improving message transmission speed by 40\%.}
-          \resumeItemListEnd 
-                      \vspace{-13pt}
-
-      \resumeProjectHeading
-          {\textbf{\bluey{\href{https://tutor-website-5528f.web.app/en}{Tutoring Business Website \faLink}}} $|$ \emph{React, TypeScript, Vite, Firebase}}{Feb 2025 - Current}
-          \resumeItemListStart
-            \resumeItem{Designed and shipped a tutoring website serving \textbf{80+ active users.}}
-            \resumeItem{Achieved \textbf{near-zero operating costs} by implementing Firestore and client-side processing for a lean infrastructure.}
-            \resumeItem{Currently integrating \textbf{Stripe API} with \textbf{Firebase Functions} to process \textbf{\$5,500+} in monthly transactions.}
-            \resumeItem{Designed email system to completely automate booking and meeting notifications using Resend API.}
-          \resumeItemListEnd
-            \vspace{-13pt}
-      \resumeProjectHeading
-          {\textbf{\bluey{\href{https://github.com/supermileage/dynamometer-firmware}{Electric Vehicle Testbench \faLink}}} $|$ \emph{C, C++, Assembly, Arduino}}{Aug 2022 - Apr 2023}
-          \resumeItemListStart
-            \resumeItem{Developed a TFT-LED HUD using \textbf{C/C++} and Adafruit GFX, providing real-time vehicle metrics to testbench users.}
-            \resumeItem{Utilized \textbf{register manipulation} and inline assembly to replace digitalRead(), reducing sensor polling latency by 20\%.}
-            \resumeItem{Integrated cloud-hosted Grafana dashboard for data visualization, streaming live telemetry via ESP32 over WebSockets.}
-          \resumeItemListEnd 
-\vspace{-13pt}
-
-              \resumeProjectHeading
-          {\textbf{\bluey{\href{https://devpost.com/software/sherlockify}{Social Media Account Hunter \faLink}}} $|$ \emph{React, Python, Google Cloud Platform, Docker}}{Oct 2023}
-          \resumeItemListStart
+        \resumeItemListEnd 
+        \vspace{-13pt}
+        
+        \resumeProjectHeading
+        {\textbf{\bluey{\href{https://devpost.com/software/sherlockify}{Social Media Account Hunter \faLink}}} $|$ \emph{React, Python, Google Cloud Platform, Docker}}{Oct 2023}
+        \resumeItemListStart
             \resumeItem{Built full-stack web app to find all social media accounts under a specific username.}
             \resumeItem{Implemented \textbf{multithreading, Server Sent Events} and lazy-loading to reduce server response time by 85\% compared to using a POST response.}
             \resumeItem{Reduced cold start delays by 70\% by deploying\textbf{ Docker container} with pre-warmed instance to Google Cloud Run.}
-          \resumeItem{Established \textbf{CI/CD} pipeline via Google Cloud Build to reduce manual deployment time by 40\%.}
         \resumeItemListEnd
-
-
+                
+        \vspace{-13pt}
+        \resumeProjectHeading
+        {\textbf{\bluey{\href{https://github.com/supermileage/dynamometer-firmware}{Electric Vehicle Testbench \faLink}}} $|$ \emph{C, C++, Assembly, Arduino}}{Aug 2022 - Apr 2023}
+        \resumeItemListStart
+            \resumeItem{Developed a TFT-LED HUD using \textbf{C/C++} and Adafruit GFX, providing real-time vehicle metrics to testbench users.}
+            \resumeItem{Integrated cloud-hosted Grafana dashboard for data visualization, streaming live telemetry via ESP32 over WebSockets.}
+        \resumeItemListEnd 
+              
     \resumeSubHeadingListEnd
 \vspace{-15pt}
 
 
-%-----------INVOLVEMENT---------------
-\section{Leadership / Extracurricular}
-    \resumeSubHeadingListStart
-        \resumeSubheading{\bluey{SAP Canada Intern Committee}}{Jan 2024 -- Aug 2024}{\bluey{Event Manager}}{Vancouver, BC}
-            \resumeItemListStart
-                \resumeItem{Worked in a team of 15 to organize and execute Vancouver-local and Canada-wide office events for 100+ interns.}
-                \resumeItem{Programmed social events and lead orientations for 32 new interns in order to ensure a smooth onboarding.}
-                \resumeItem{Increased average event turnout by 40\%, through effective event planning and marketing.}
-            \resumeItemListEnd
+% %-----------INVOLVEMENT---------------
+% \section{Leadership / Extracurricular}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{\bluey{SAP Canada Intern Committee}}{Jan 2024 -- Aug 2024}{\bluey{Event Manager}}{Vancouver, BC}
+%             \resumeItemListStart
+%                 \resumeItem{Worked in a team of 15 to organize and execute Vancouver-local and Canada-wide office events for 100+ interns.}
+%                 \resumeItem{Increased average event turnout by 40\%, through effective event planning and marketing.}
+%             \resumeItemListEnd
         
-    \resumeSubHeadingListEnd
+%     \resumeSubHeadingListEnd
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-    \textbf{Languages/Technologies}{: Python, C, C++, Java, JavaScript, TypeScript, Kotlin, React, SQL, Arduino, WebSockets}\\
-    \textbf{Developer Tools}{: Git, Linux, Docker, Google Cloud Platform, JUnit, Mocha, Chai} \\
-    }}
- \end{itemize}
- \vspace{-16pt}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+		\textbf{Languages/Frameworks}{: JavaScript, TypeScript, React, HTML, CSS, Python, C, C++, Java, Kotlin , SQL, Arduino}\\
+		\textbf{Developer Tools}{: NodeJS, Google Cloud Platform, Git, Linux, Docker, JUnit, Mocha, Chai, WebSockets} \\
+	}}
+\end{itemize}
+\vspace{-16pt}
 
 %
 
