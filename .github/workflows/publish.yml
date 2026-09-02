@@ -1,18 +1,33 @@
-
 name: Publish
 
 on:
   push:
     branches:
       - main
+
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
-      - name: Compile and Deploy
-        uses: jonhue/pubtex-action@v1.1.0
+      - uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          files: |
-            resume.tex
+          root_file: resume.tex
+
+      - name: Prepare publish directory
+        run: |
+          cp resume.pdf dist/
+          cp README.md dist/index.md
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          enable_jekyll: true
+          force_orphan: true
